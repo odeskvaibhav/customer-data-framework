@@ -1,0 +1,107 @@
+.box {
+	border: 0;
+	box-shadow: none;
+	border-radius: 5px;
+	background: #f5f5f5;
+}
+
+.box-body, .box-header, .box-footer {
+	padding: 15px 31px;
+}
+
+.box-footer {
+	background: #f5f5f5;
+}
+
+.form-control {
+	border-radius: 3px;
+	height: 32px;
+	border: solid 1px #e6e8ed;
+}
+
+.form-control:focus {
+	border-color: #d2d6de;
+}
+
+.content-wrapper {
+	background: #ffffff;
+}
+
+.help-block {
+	color: #9b9b9b;
+	font-size: 14px;
+}
+
+a {
+	color: #47beaf;
+}
+
+/* Checkboxes styles */
+
+.plugin-icheck label {
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.plugin-icheck label input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.plugin-icheck label .checkmark {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	height: 16px;
+	width: 16px;
+	background-color: #ffffff;
+	border: 2px solid #d4d4d4;
+	border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.plugin-icheck label:hover input ~ .checkmark {
+	background-color: #d4d4d4;
+}
+
+/* When the checkbox is checked, add a blue background */
+.plugin-icheck label input:checked ~ .checkmark {
+	background-color: #47beaf;
+	border-color: #47beaf;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.plugin-icheck label .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.plugin-icheck label input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.plugin-icheck label .checkmark:after {
+	left: 3px;
+	top: -1px;
+	width: 4px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/** Checkboxes styles end **/

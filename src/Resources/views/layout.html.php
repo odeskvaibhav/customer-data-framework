@@ -17,6 +17,7 @@
     <?php
     $this->headLink()->appendStylesheet($this->minifiedAssetUrl()->minifiedAssetUrl('/bundles/pimcorecustomermanagementframework/admin/css/lib.css'));
     $this->headLink()->appendStylesheet($this->minifiedAssetUrl()->minifiedAssetUrl('/bundles/pimcorecustomermanagementframework/admin/css/cmf.css'));
+    $this->headLink()->appendStylesheet($this->minifiedAssetUrl()->minifiedAssetUrl('/bundles/pimcorecustomermanagementframework/admin/css/custom/home.css'));
     ?>
 
     <?= $this->headLink(); ?>

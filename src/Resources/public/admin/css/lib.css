@@ -10203,7 +10203,8 @@ button.close {
 .icheckbox_square,
 .iradio_square {
     display: inline-block;
-    *display: inline;
+    *
+    display: inline;
     vertical-align: middle;
     margin: 0;
     padding: 0;
@@ -10861,7 +10862,8 @@ button.close {
 .icheckbox_flat-blue,
 .iradio_flat-blue {
     display: inline-block;
-    *display: inline;
+    *
+    display: inline;
     vertical-align: middle;
     margin: 0;
     padding: 0;

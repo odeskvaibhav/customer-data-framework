@@ -580,7 +580,7 @@ app.SearchFilter.DateRangePicker = (function () {
          */
         iCheck: function ($scope) {
             $scope.find('.plugin-icheck :input').iCheck({
-                checkboxClass: 'icheckbox_flat-blue',
+                checkboxClass: 'icheckbox_square',
                 radioClass: 'iradio_flat-blue'
             });
         },

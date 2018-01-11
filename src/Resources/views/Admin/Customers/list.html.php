@@ -47,7 +47,7 @@ $cv = $this->customerView;
             </div>
             <!-- /.box-header -->
 
-            <div class="box-body no-padding table-responsive">
+            <div class="box-body table-responsive">
                 <table class="table table-striped table-bordered table-hover">
                     <thead>
                     <tr>
