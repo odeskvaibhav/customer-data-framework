@@ -33,11 +33,10 @@
     </legend>
 
     <div class="form-group">
-        <div class="checkbox plugin-icheck">
-            <label>
-                <input name="filter[active]" value="1" type="checkbox" <?= $filters['active'] ? 'checked="checked"' : '' ?>>
-                <?= $customerView->translate('cmf_filters_options_only_active') ?>
-            </label>
-        </div>
+        <label class="custom">
+            <?= $customerView->translate('cmf_filters_options_only_active') ?>
+            <input name="filter[active]" value="1" type="checkbox" <?= $filters['active'] ? 'checked="checked"' : '' ?>>
+            <span class="checkmark"></span>
+        </label>
     </div>
 </fieldset>

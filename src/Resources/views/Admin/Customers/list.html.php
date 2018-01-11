@@ -38,10 +38,10 @@ $cv = $this->customerView;
     <?php else: ?>
 
         <!-- List -->
-        <div class="box box-info">
+        <div class="box filter-results">
             <div class="box-header with-border">
                 <h3 class="box-title">
-                    <i class="fa fa-user"></i>
+                    <i class="fa fa-users"></i>
                     <?= $cv->translate('cmf_filters_customers') ?>
                 </h3>
             </div>

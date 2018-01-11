@@ -83,8 +83,7 @@ $this->jsConfig()->add('registerShareFilterDefinition', true);
             </div>
         <?php endif; ?>
 
-        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#save-filter-definition-modal"><i
-                    class="fa fa-save"></i>&nbsp;<?= ($userAllowedToUpdate && $userAllowedToShare) ? $customerView->translate('cmf_filters_save_share') : $customerView->translate('cmf_filters_save') ?>
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#save-filter-definition-modal"><?= ($userAllowedToUpdate && $userAllowedToShare) ? $customerView->translate('cmf_filters_save_share') : $customerView->translate('cmf_filters_save') ?>
         </button>
         <div id="save-filter-definition-modal" class="modal fade text-left" role="dialog">
             <div class="modal-dialog">
@@ -156,12 +155,10 @@ $this->jsConfig()->add('registerShareFilterDefinition', true);
 
     <a href="<?= $this->selfUrl()->get(true, $this->addPerPageParam()->add($clearUrlParams ?: [])) ?>"
        class="btn btn-default">
-        <i class="fa fa-ban"></i>
         <?= $customerView->translate('cmf_filters_clear'); ?>
     </a>
 
     <button type="submit" class="btn btn-primary">
-        <i class="fa fa-filter"></i>
         <?= $customerView->translate('cmf_filters_apply'); ?>
     </button>
 </div>

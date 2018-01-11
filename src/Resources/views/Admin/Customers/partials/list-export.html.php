@@ -26,7 +26,6 @@ if (count($exporterConfigs) === 0) {
                     ?>
 
                     <a href="#" data-href="<?= $exportUrl ?>" class="btn btn-default js-customer-export">
-                        <i class="<?= isset($exporterConfig['icon']) ? $exporterConfig['icon'] : 'fa fa-download' ?>"></i>
                         <?= $cv->translate('cmf_filters_export') ?>
                         <span class="label label-info"><?= $exporterConfig['name'] ?></span>
                     </a>

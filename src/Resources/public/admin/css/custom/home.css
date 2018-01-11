@@ -1,3 +1,11 @@
+.content {
+	padding: 0;
+}
+
+.content-wrapper {
+	background: #ffffff;
+}
+
 .box {
 	border: 0;
 	box-shadow: none;
@@ -10,7 +18,7 @@
 }
 
 .box-footer {
-	background: #f5f5f5;
+	background: inherit;;
 }
 
 .form-control {
@@ -19,12 +27,18 @@
 	border: solid 1px #e6e8ed;
 }
 
-.form-control:focus {
-	border-color: #d2d6de;
+.select2-container--default .select2-selection--single, .select2-selection .select2-selection--single {
+	border-radius: 4px;
 }
 
-.content-wrapper {
-	background: #ffffff;
+.select2-container--default .select2-search--dropdown .select2-search__field {
+	border-radius: 3px;
+	height: 32px;
+	border-color: #d2d6de !important;
+}
+
+.form-control:focus {
+	border-color: #d2d6de;
 }
 
 .help-block {
@@ -32,16 +46,19 @@
 	font-size: 14px;
 }
 
-a {
+a, a:hover, a:active, a:focus, legend {
 	color: #47beaf;
+}
+
+legend {
+	border: 0;
 }
 
 /* Checkboxes styles */
 
-.plugin-icheck label {
+label.custom {
 	position: relative;
 	padding-left: 35px;
-	margin-bottom: 12px;
 	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -50,16 +67,16 @@ a {
 }
 
 /* Hide the browser's default checkbox */
-.plugin-icheck label input {
+label.custom input {
 	position: absolute;
 	opacity: 0;
 	cursor: pointer;
 }
 
 /* Create a custom checkbox */
-.plugin-icheck label .checkmark {
+label.custom .checkmark {
 	position: absolute;
-	top: 5px;
+	top: 2px;
 	left: 0;
 	height: 16px;
 	width: 16px;
@@ -69,32 +86,32 @@ a {
 }
 
 /* On mouse-over, add a grey background color */
-.plugin-icheck label:hover input ~ .checkmark {
+label.custom:hover input ~ .checkmark {
 	background-color: #d4d4d4;
 }
 
 /* When the checkbox is checked, add a blue background */
-.plugin-icheck label input:checked ~ .checkmark {
+label.custom input:checked ~ .checkmark {
 	background-color: #47beaf;
 	border-color: #47beaf;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.plugin-icheck label .checkmark:after {
+label.custom .checkmark:after {
 	content: "";
 	position: absolute;
 	display: none;
 }
 
 /* Show the checkmark when checked */
-.plugin-icheck label input:checked ~ .checkmark:after {
+label.custom input:checked ~ .checkmark:after {
 	display: block;
 }
 
 /* Style the checkmark/indicator */
-.plugin-icheck label .checkmark:after {
-	left: 3px;
-	top: -1px;
+label.custom .checkmark:after {
+	left: 4px;
+	top: 0px;
 	width: 4px;
 	height: 10px;
 	border: solid white;
@@ -104,4 +121,64 @@ a {
 	transform: rotate(45deg);
 }
 
+label {
+	font-weight: normal;
+}
+
 /** Checkboxes styles end **/
+
+
+/** Button styles start **/
+
+.btn {
+	width: 180px;
+	height: 36px;
+	border-radius: 18px;
+	border: 0;
+}
+
+.btn.btn-default {
+	background: #d0d0d0;
+}
+
+.btn.btn-primary {
+	background: #47beaf;
+}
+
+btn-primary:active:hover, .btn-primary.active:hover, .open > .dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open > .dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open > .dropdown-toggle.btn-primary.focus {
+	color: #fff;
+	background-color: #47beaf;
+	border: 0;
+}
+
+/** Button styles end **/
+
+.filter-results {
+	background: #ffffff;
+	border: solid 1px #d0d0d0;
+	border-radius: 5px;
+}
+
+.filter-results .box-title {
+	color: #47beaf;
+}
+
+.filter-results .box {
+	background: inherit;
+}
+
+.pagination-footer, .pagination-footer select {
+	color: #9b9b9b;
+	font-size: 12px;
+}
+
+.pagination-footer select {
+	height: 32px;
+	border-radius: 5px;
+	background-color: #f6f6f6;
+	box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.bg-aqua, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body {
+	background-color: inherit !important;
+}
