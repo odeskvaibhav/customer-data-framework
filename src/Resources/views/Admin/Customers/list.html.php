@@ -41,23 +41,23 @@ $cv = $this->customerView;
         <div class="box filter-results">
             <div class="box-header with-border">
                 <h3 class="box-title">
-                    <i class="fa fa-users"></i>
+                    <img src="/bundles/pimcorecustomermanagementframework/icons/customers.svg" class="fa" />
                     <?= $cv->translate('cmf_filters_customers') ?>
                 </h3>
             </div>
             <!-- /.box-header -->
 
             <div class="box-body table-responsive">
-                <table class="table table-striped table-bordered table-hover">
+                <table class="table table-bordered table-hover">
                     <thead>
                     <tr>
-                        <th class="table-id-column">#</th>
-                        <th class="reference-id-column">ID</th>
                         <th class="icon-column icon-column--center"></th>
+                        <th class="reference-id-column">ID</th>
                         <th><?= $cv->translate('cmf_filters_customer_name') ?></th>
                         <th><?= $cv->translate('cmf_filters_customer_email') ?></th>
                         <th><?= $cv->translate('cmf_filters_customer_gender') ?></th>
                         <th><?= $cv->translate('cmf_filters_segments') ?></th>
+                        <th></th>
                     </tr>
                     </thead>
 

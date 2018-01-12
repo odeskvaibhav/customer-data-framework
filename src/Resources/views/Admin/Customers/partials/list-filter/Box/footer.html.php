@@ -114,20 +114,22 @@ $this->jsConfig()->add('registerShareFilterDefinition', true);
 
                         <div class="row">
                             <div class="col-xs-6">
-                                <div class="checkbox plugin-icheck">
-                                    <label for="filterDefinition[readOnly]">
+                                <div class="checkbox">
+                                    <label for="filterDefinition[readOnly]" class="custom">
+	                                    <?= $customerView->translate('cmf_filters_save_read_only'); ?>
                                         <input type="checkbox" name="filterDefinition[readOnly]"
                                                id="filterDefinition[readOnly]"<?= $filterDefinition->isReadOnly() ? ' checked="checked"' : '' ?>>
-                                        <?= $customerView->translate('cmf_filters_save_read_only'); ?>
+                                        <span class="checkmark"></span>
                                     </label>
                                 </div>
                             </div>
                             <div class="col-xs-6">
-                                <div class="checkbox plugin-icheck">
-                                    <label for="filterDefinition[shortcutAvailable]">
+                                <div class="checkbox">
+                                    <label for="filterDefinition[shortcutAvailable]" class="custom">
+	                                    <?= $customerView->translate('cmf_filters_save_shortcut_available'); ?>
                                         <input type="checkbox" name="filterDefinition[shortcutAvailable]"
                                                id="filterDefinition[shortcutAvailable]"<?= $filterDefinition->isShortcutAvailable() ? ' checked="checked"' : '' ?>>
-                                        <?= $customerView->translate('cmf_filters_save_shortcut_available'); ?>
+                                       <span class="checkmark"></span>
                                     </label>
                                 </div>
                             </div>
@@ -142,7 +144,7 @@ $this->jsConfig()->add('registerShareFilterDefinition', true);
                                 <?= $customerView->translate('cmf_filters_save_update'); ?>
                             </a>
                         <?php endif; ?>
-                        <a type="button" class="btn btn-success" name="save-filter-definition"
+                        <a type="button" class="btn btn-primary" name="save-filter-definition"
                            id="save-filter-definition"><i class="fa fa-plus"></i>
                             <?= $customerView->translate('cmf_filters_save_new'); ?>
                         </a>

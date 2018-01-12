@@ -3,6 +3,15 @@
 $cv = $this->customerView;
 ?>
 
+<?php if(!$hideAdvancedFilterSettings): ?>
+    <div class="box new-customer-bar">
+        <?php if($accessToTempCustomerFolder || true): ?>
+            <button type="button" class="btn btn-primary" id="add-new-customer"
+                    name="add-new-customer"><?= $customerView->translate('cmf_filters_new_customer'); ?></button>
+        <?php endif; ?>
+    </div>
+<?php endif; ?>
+
 <form class="search-filters" role="form" action="<?= $this->filterFormAction()->get($this->paginator) ?>">
 
     <?php if (count($this->searchBarFields) > 0): ?>

@@ -6,6 +6,11 @@
 	background: #ffffff;
 }
 
+.box.new-customer-bar {
+	background: inherit;
+	padding-top: 10px;
+}
+
 .box {
 	border: 0;
 	box-shadow: none;
@@ -135,6 +140,11 @@ label {
 	height: 36px;
 	border-radius: 18px;
 	border: 0;
+	padding: 0;
+}
+
+a.btn {
+	line-height: 36px;
 }
 
 .btn.btn-default {
@@ -181,4 +191,63 @@ btn-primary:active:hover, .btn-primary.active:hover, .open > .dropdown-toggle.bt
 
 .bg-aqua, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body {
 	background-color: inherit !important;
+}
+
+.filter-results td {
+	vertical-align: middle !important;
+}
+
+.filter-results td .btn-primary {
+	height: 22px;
+	border-radius: 11px;
+	width: 75px;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+.filter-results .table-bordered {
+	border: 0;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+	border: solid 1px #d0d0d0;
+}
+
+.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
+	border: solid 1px #d0d0d0;
+}
+
+.filter-results th:first-child, .filter-results td:first-child {
+	border-left: 0 !important;
+}
+
+.filter-results th:last-child, .filter-results td:last-child {
+	border-right: 0 !important;
+}
+
+img.fa {
+	height: 20px;
+}
+
+table .reference-id-column {
+	text-align: left;
+}
+table .edit-id-column {
+	text-align: center;
+}
+
+.text-success {
+	color: #47beaf;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.modal-content {
+	border-radius: 5px;
+}
+
+.callout.callout-warning {
+	background: #f4f4f4 !important;
+	color: #444 !important;
+	border-color: #d4d4d4;
 }

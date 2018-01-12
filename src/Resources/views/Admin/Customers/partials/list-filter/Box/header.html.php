@@ -33,10 +33,6 @@ if($accessToTempCustomerFolder) {
 
             <?php if(!$hideAdvancedFilterSettings): ?>
                 <div class="col-sm-9 col-md-6 text-right">
-                    <?php if($accessToTempCustomerFolder): ?>
-                        <button type="button" class="btn btn-primary" id="add-new-customer"
-                                name="add-new-customer"><?= $customerView->translate('cmf_filters_new_customer'); ?></button>
-                    <?php endif; ?>
                     <!--suppress HtmlFormInputWithoutLabel -->
                     <select
                             id="filterDefinition[id]"
