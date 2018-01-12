@@ -225,6 +225,14 @@ btn-primary:active:hover, .btn-primary.active:hover, .open > .dropdown-toggle.bt
 	border-right: 0 !important;
 }
 
+td .label-default {
+	background-color: #e8e8e8;
+	font-weight: normal;
+	font-size: 12px;
+	border-radius: 11px;
+	padding: 4px 12px;
+}
+
 img.fa {
 	height: 20px;
 }
